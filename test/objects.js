@@ -536,6 +536,8 @@ $(document).ready(function() {
   test("objects: isZero", function(){
     ok(!_.isZero(null))
     ok(!_.isZero("0"))
+    ok(!_.isZero(0.5))
+    ok(!_.isZero(Infinity))
     ok(_.isZero(0))
     ok(_.isZero(new Object(0)))
     ok(_.isZero(new Number(0)))

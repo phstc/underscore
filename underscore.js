@@ -670,7 +670,7 @@
   };
   
   _.isZero = function(obj){
-   return _.isNumber(obj) && 0 === parseInt(obj, 10);
+   return _.isNumber(obj) && 0 == obj;
   }
 
   // Internal recursive comparison function.
